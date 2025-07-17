@@ -1,21 +1,19 @@
-# portfolio_app.py
-
 import streamlit as st
 import pandas as pd
 from pathlib import Path
 import base64
 
-# Page config
+
 st.set_page_config(page_title="My Portfolio", layout="wide")
 
 # Local path for storing contact messages
 DATA_PATH = Path("contact_messages.csv")
 
-# Sidebar navigation
+
 st.sidebar.title("Navigation")
 page = st.sidebar.radio("Go to", ["Home", "Projects", "Resume", "Contact"])
 
-# ---- HOME PAGE ----
+
 if page == "Home":
     st.title("👋 Welcome to My Portfolio")
     col1, col2 = st.columns([1, 2])
@@ -74,7 +72,7 @@ if page == "Home":
         st.markdown( "[![X](https://img.shields.io/badge/-X-000000?logo=twitter)](https://x.com/@arbab_thakur)")
 
     
-# ---- PROJECTS ----
+
 elif page == "Projects":
     st.title("📁 Projects")
     project_data = [
@@ -172,7 +170,7 @@ elif page == "Projects":
                 st.markdown(f"[GitHub]({p['github']})")
         st.markdown("---")
 
-# ---- RESUME SECTION ----
+
 elif page == "Resume":
     st.title("📄 My Resume")
     with open("resume.pdf", "rb") as pdf_file:
@@ -189,7 +187,7 @@ elif page == "Resume":
             st.markdown(pdf_display, unsafe_allow_html=True)
         # If st.pdf fails, use `st.markdown` with embed method
 
-# ---- CONTACT ----
+
 elif page == "Contact":
     st.title("📬 Contact Me")
     with st.form(key="contact_form"):
