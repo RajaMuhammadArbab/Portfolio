@@ -206,20 +206,4 @@ elif page == "Contact":
             msg_data.to_csv(DATA_PATH, index=False)
             st.success("✅ Thank you! Your message has been received.")
 
-# ---- LIGHT/DARK MODE & FOOTER ----
-# Optional toggle or dark mode logic can be added here
 
-# ---- REQUIREMENTS ----
-# Create a requirements.txt with:
-# streamlit
-# pandas
-# pillow
-
-# ---- README.md ----
-# Create a README.md with project description, setup instructions, and demo link
-
-# ---- DEPLOYMENT ----
-# 1. Push code to GitHub
-# 2. Go to https://streamlit.io/cloud
-# 3. Link your GitHub repo and deploy
-# 4. Share your Streamlit app URL!
