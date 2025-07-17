@@ -17,7 +17,7 @@ page = st.sidebar.radio("Go to", ["Home", "Projects", "Resume", "Contact"])
 
 # ---- HOME PAGE ----
 if page == "Home":
-    st.title("👋 Welcome to My Portfolio")
+    st.title("👋 Welcome to My Portfolio1")
     col1, col2 = st.columns([1, 2])
 
     with col1:
