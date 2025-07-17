@@ -175,13 +175,15 @@ elif page == "Resume":
                            data=PDFbyte,
                            file_name="resume.pdf",
                            mime='application/octet-stream')
-        st.markdown("---")
-        st.markdown("### 📑 Resume Preview")
-        with open("resume.pdf", "rb") as f:
-            base64_pdf = base64.b64encode(f.read()).decode('utf-8')
-            pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="100%" height="600px" type="application/pdf"></iframe>'
-            st.markdown(pdf_display, unsafe_allow_html=True)
-        # If st.pdf fails, use `st.markdown` with embed method
+
+    st.markdown("---")
+    st.markdown("### 📑 Resume Preview")
+    resume_viewer = '''
+    <iframe src="resume.pdf" width="100%" height="600px" type="application/pdf"></iframe>
+    '''
+    st.markdown(resume_viewer, unsafe_allow_html=True)
+
+       
 
 
 elif page == "Contact":
