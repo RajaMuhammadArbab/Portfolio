@@ -3,23 +3,19 @@ import pandas as pd
 from pathlib import Path
 import base64
 
-
 st.set_page_config(page_title="My Portfolio", layout="wide")
 
-# Local path for storing contact messages
 DATA_PATH = Path("contact_messages.csv")
-
 
 st.sidebar.title("Navigation")
 page = st.sidebar.radio("Go to", ["Home", "Projects", "Resume", "Contact"])
-
 
 if page == "Home":
     st.title("👋 Welcome to My Portfolio")
     col1, col2 = st.columns([1, 2])
 
     with col1:
-        st.image("profile.jpg", width=200)  # Add your profile image here
+        st.image("profile.jpg", width=200)  
 
     with col2:
         st.subheader("Hi, I'm Raja Muhammad Arbab")
