@@ -37,7 +37,7 @@ if page == "Home":
     - **Languages**: Python, HTML, CSS
     - **Libraries/Tools**: NumPy, Pandas, OpenCV, Streamlit
     - **Frameworks**: Tkinter
-    - **Tools**: Git, GitHub, VS Code
+    - **Tools**:GitHub, VS Code
     """)
     
     st.markdown("---")
