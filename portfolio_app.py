@@ -28,7 +28,7 @@ if page == "Home":
         st.markdown("""
         - 🎓 **IT Student** passionate about Python and building real-world applications.
         - 💻 Skilled in Python, Streamlit, OpenCV, NumPy, and Tkinter.
-        - 🚀 Exploring AI, automation, and web app development.
+        - 🚀 Exploring AI, Automation, Machine Learning and Web App Development.
         """)
 
     st.markdown("---")
